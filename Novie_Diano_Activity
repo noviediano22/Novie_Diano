@@ -1,0 +1,60 @@
+using System;
+namespace Program
+{
+    class Person
+    {
+        public string name, address, gender, email, birthdate;
+        public int phone;
+    }
+    class student : Person
+    {
+        public string shoolgrad, course;
+    }
+    class employee : Person
+    {
+
+    }
+    class faculty : employee
+    {
+        public string desgin, collegedep, subject;
+        public double salary;
+    }
+    class staff : employee
+    {
+        public string design, servicedep;
+        public double salary;
+    }
+    class ConsoleApp8
+    {
+        static void Main(string[] args)
+        {
+            student stud = new student();
+            stud.name = "Novie Diano";
+            stud.address = "CDO";
+            stud.gender = "Male";
+            stud.phone = 1234567890;
+            stud.email = "noviediano@gmail.com";
+            stud.birthdate = "02-02-02";
+            stud.shoolgrad = "10-10-10";
+            stud.course = "BSIT";
+            Console.WriteLine($"STUDENT DETAILS: \nStudent: {stud.name}\nAddress: {stud.address}\nGender: {stud.gender}\nPhone: {stud.phone}\nEmail: {stud.email}\nBirth: {stud.birthdate}\nSchool Graduate: {stud.shoolgrad}\nCourse: {stud.course}");
+            Console.WriteLine();
+
+            faculty faculty = new faculty();
+            faculty.name = "Novie Diano";
+            faculty.desgin = "Software Engineer Prof IT";
+            faculty.salary = 50000;
+            faculty.collegedep = "CITE";
+            faculty.subject = "OOP";
+            Console.WriteLine($"FACULTY DETAILS: \nFaculty: {faculty.name}\nDesignation: {faculty.desgin}\nSalary: {faculty.salary}\nCollege Department: {faculty.collegedep}\nSubject Load: {faculty.subject}");
+            Console.WriteLine();
+
+            staff staf = new staff();
+            staf.name = "Novie Diano";
+            staf.design = "Student Counsilor";
+            staf.salary = 55500;
+            staf.servicedep = "CITE";
+            Console.WriteLine($"STAFF DETAILS: \nsStaff: {staf.name}\nDesignation: {staf.design}\nSalary: {staf.salary}\nService Department: {staf.servicedep}");
+        }
+    }
+}
