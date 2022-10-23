@@ -5,10 +5,10 @@
 
 <img src="https://raw.githubusercontent.com/noviediano22/Novie_Diano/main/Capture.PNG">
 
-  ```diff
+
 - text in red
 + text in green
 ! text in orange
 # text in gray
 @@ Dddee @@
-```
+
