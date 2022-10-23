@@ -2,4 +2,4 @@
 <p>Exercise 1: Define the classes representing the ff entities:</p>
 
 
-<img src
+<img src="Captue.PNG">
